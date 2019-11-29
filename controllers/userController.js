@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const randomId = require('../helpers/identity.js');
 require('../models/db/user')();
 const db = require('../models/db/index');
