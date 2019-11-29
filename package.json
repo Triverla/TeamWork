@@ -4,7 +4,10 @@
   "description": "Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate interaction between colleagues and promote internal bonding. This is the backend for the application with the various API endpoints",
   "main": "server.js",
   "scripts": {
-    "test": "jest --forceExit --coverage --maxWorkers=1"
+    "test": "jest --forceExit --coverage --maxWorkers=1",
+    "coverage": "jest --forceExit --maxWorkers=1 --coverage --coverageReporters=text-lcov | coveralls",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
