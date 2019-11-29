@@ -1,10 +1,10 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const randomId = require('../starters/identity');
+const randomId = require('../helpers/identity.js');
 require('../models/db/user')();
 const db = require('../models/db/index');
-const { validateSignup } = require('../models/validates/signup.validate');
-const { validateLogin } = require('../models/validates/login.validate');
+const { validateSignup } = require('../models/validations/signup.validate');
+const { validateLogin } = require('../models/validations/login.validate');
 
 class UserController {
   static async createUserAccount(req, res) {
